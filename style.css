@@ -6,6 +6,14 @@ body {
     background-color: #90ca95;
 }
 
+.text-grass {
+    color: #90ca95;
+}
+
 .text-violet {
     color: #3e2f5b;
+}
+
+.text-smoke {
+    color: #f9fcfa;
 }
