@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="theme-color" content="#E7FCDC">
+		<meta name="theme-color" content="#E7FCDC" />
 		<title>Candidato Consiglio di Quartiere 4 - Giovanni Mugelli</title>
 		<!-- Collegamento al foglio di stile di Tailwind CSS -->
 		<link
@@ -46,6 +46,7 @@
 						</div>
 
 						<button
+							id="menuButton"
 							type="button"
 							class="inline-flex p-1 text-violet transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100"
 						>
@@ -108,6 +109,33 @@
 							</a>
 						</div>
 					</div>
+
+					<div
+						id="menu"
+						class="hidden flex flex-col gap-10 justify-center items-center bg-green-50 lg:hidden"
+					>
+						<a
+							href="#"
+							title=""
+							class="text-base font-semibold text-violet transition-all duration-200 hover:text-opacity-80"
+						>
+							Chi sono
+						</a>
+						<a
+							href="#"
+							title=""
+							class="text-base font-semibold text-violet transition-all duration-200 hover:text-opacity-80"
+						>
+							Come votare
+						</a>
+						<a
+							href="#"
+							title=""
+							class="text-base font-semibold text-violet transition-all duration-200 hover:text-opacity-80"
+						>
+							Quando
+						</a>
+					</div>
 				</div>
 			</header>
 
@@ -166,4 +194,19 @@
 		</div>
 		<!-- </div> -->
 	</body>
+
+	<script>
+		const menuButton = document.querySelector("#menuButton");
+		const menu = document.querySelector("#menu");
+
+		menuButton.addEventListener("click", () => {
+			if (menu.classList.contains("hidden")) {
+				menuButton.setAttribute("aria-expanded", "true");
+				menu.classList.remove("hidden");
+			} else {
+				menuButton.setAttribute("aria-expanded", "false");
+				menu.classList.add("hidden");
+			}
+		});
+	</script>
 </html>
