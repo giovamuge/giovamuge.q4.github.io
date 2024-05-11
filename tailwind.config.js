@@ -1,0 +1,62 @@
+tailwind.config = {
+	theme: {
+		fontFamily: {
+			display: ["Alegreya", "serif"],
+			body: ["Noto Serif", "serif"],
+
+			sans: ["Graphik", "sans-serif"],
+			serif: ["Alegreya", "serif"],
+		},
+		extend: {
+			colors: {
+				clifford: "#da373d",
+				// "light-green": "#f9fcfa",
+				// violet: "#3e2f5b",
+				// grass: "#90ca95",
+				"light-green": {
+					50: "#f9fcfa",
+					100: "#eaf4ed",
+					200: "#d0e7d6",
+					300: "#a7d2b2",
+					400: "#78b888",
+					500: "#57a069",
+					600: "#448556",
+					700: "#386c47",
+					800: "#315b3d",
+					900: "#2d4d37",
+					950: "#1e3325",
+					DEFAULT: "#f9fcfa",
+				},
+				grass: {
+					50: "#f4f9f4",
+					100: "#e5f3e6",
+					200: "#cbe7cd",
+					300: "#90ca95",
+					400: "#72b678",
+					500: "#4e9955",
+					600: "#3c7d42",
+					700: "#326336",
+					800: "#2b502f",
+					900: "#254229",
+					950: "#102313",
+					DEFAULT: "#90ca95",
+				},
+
+				violet: {
+					50: "#f2f1fc",
+					100: "#e6e5fa",
+					200: "#d3d0f5",
+					300: "#b9b3ee",
+					400: "#a394e5",
+					500: "#937ada",
+					600: "#8460cb",
+					700: "#7250b2",
+					800: "#5c4390",
+					900: "#4d3b74",
+					950: "#3e2f5b",
+					DEFAULT: "#3e2f5b",
+				},
+			},
+		},
+	},
+};
