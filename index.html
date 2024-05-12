@@ -801,6 +801,13 @@
 		const menuButton = document.querySelector("#menuButton");
 		const menu = document.querySelector("#menu");
 
+		document.querySelector("#intro").classList.add("opacity-0");
+		document.querySelector("#chi_sono").classList.add("opacity-0");
+		document.querySelector("#come_votare").classList.add("opacity-0");
+		document.querySelector("#quando_votare").classList.add("opacity-0");
+		document.querySelector("#domande_frequenti").classList.add("opacity-0");
+		document.querySelector("#contattami").classList.add("opacity-0");
+
 		menuButton.addEventListener("click", () => {
 			if (menu.classList.contains("hidden")) {
 				menuButton.setAttribute("aria-expanded", "true");
@@ -810,5 +817,32 @@
 				menu.classList.add("hidden");
 			}
 		});
+
+		const observer = new IntersectionObserver((entries) => {
+			// Loop over the entries
+			entries.forEach((entry) => {
+				// If the element is visible
+				if (entry.isIntersecting) {
+					entry.target.classList.remove("opacity-0");
+					// Add the animation class
+					entry.target.classList.add(
+						"transition-all",
+						"transition-opacity",
+						"ease-in",
+						"duration-700",
+						"opacity-100",
+						"motion-reduce:transition-none",
+						"motion-reduce:hover:transform-none"
+					);
+				}
+			});
+		});
+
+		observer.observe(document.querySelector("#intro"));
+		observer.observe(document.querySelector("#chi_sono"));
+		observer.observe(document.querySelector("#come_votare"));
+		observer.observe(document.querySelector("#quando_votare"));
+		observer.observe(document.querySelector("#domande_frequenti"));
+		observer.observe(document.querySelector("#contattami"));
 	</script>
 </html>
