@@ -11,6 +11,10 @@
 	color: var(--color-violet);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--bg-color);
 }
