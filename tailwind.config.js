@@ -3,7 +3,6 @@ tailwind.config = {
 		fontFamily: {
 			display: ["Alegreya", "serif"],
 			body: ["Noto Serif", "serif"],
-
 			sans: ["Graphik", "sans-serif"],
 			serif: ["Alegreya", "serif"],
 		},
