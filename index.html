@@ -60,7 +60,7 @@
 					<button
 						id="menuButton"
 						type="button"
-						class="inline-flex p-1 transition-all duration-200 border border-black lg:hidden focus:bg-violet-100 hover:bg-violet-100"
+						class="inline-flex p-1 transition-all duration-200 border border-violet lg:hidden focus:bg-violet-100 hover:bg-violet-100"
 					>
 						<!-- Menu open: "hidden", Menu closed: "block" -->
 						<svg
@@ -211,10 +211,11 @@
 							<a
 								href="#chi_sono"
 								title=""
-								class="inline-flex items-center bg-light-green justify-center w-full px-8 py-4 font-semibold transition-all duration-200 border border-violet rounded-md sm:w-auto hover:bg-violet hover:text-light-green focus:bg-black focus:text-light-green"
+								class="inline-flex items-center bg-light-green justify-center w-full px-8 py-4 font-semibold transition-all duration-200 border border-violet rounded-md sm:w-auto hover:bg-violet hover:text-light-green focus:bg-grass focus:text-light-green"
 								role="button"
 							>
-								Continua a leggere <span class="ml-2">&rarr;</span>
+								Continua a leggere
+								<span class="ml-2">&rarr;</span>
 							</a>
 						</div>
 					</div>
@@ -305,48 +306,61 @@
 					>
 						Quando votare
 					</h2>
-					<p class="max-w-lg mx-auto mt-4 leading-relaxed">
+					<p
+						class="leading-tight max-w-lg mx-auto mt-4 leading-relaxed"
+					>
 						Tutti saremo chiamati a votare 8 e 9 giugno presso il
 						proprio seggio di riferimento!
+
+						<span class="underline">
+							Aggiungi l'evento al calendario!
+						</span>
 					</p>
 				</div>
 
 				<ul class="max-w-md mx-auto mt-16 space-y-12">
-					<li class="relative flex items-start">
-						<div
+					<li>
+						<!-- <div
 							class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full"
 							aria-hidden="true"
-						></div>
-
+						></div> -->
 						<a
+							class="relative flex items-start border-violet border rounded-md p-5 hover:bg-violet hover:text-grass transition-all duration-200 cursor-pointer"
 							href="https://calendar.app.google/DyTqMa1GzgZa9yPQ7"
-							class="relative flex items-center justify-center flex-shrink-0 w-16 h-16"
 						>
-							<img
-								src="./google_calendar.png"
-								class="object-fit"
-							/>
-						</a>
-						<div class="ml-6">
-							<h3 class="text-lg font-semibold">8 Giugno</h3>
-							<p class="mt-4">Dalle 15:00 alle 23:00</p>
-						</div>
+							<div
+								class="relative flex items-center justify-center flex-shrink-0 w-16 h-16"
+							>
+								<img
+									src="./google_calendar.png"
+									class="object-fit"
+								/>
+							</div>
+							<div class="ml-6">
+								<h3 class="text-lg font-semibold">8 Giugno</h3>
+								<em class="mt-4">Dalle 15:00 alle 23:00</em>
+							</div></a
+						>
 					</li>
 
-					<li class="relative flex items-start">
+					<li>
 						<a
+							class="relative flex items-start border-violet border rounded-md p-5 hover:bg-violet hover:text-grass transition-all duration-200 cursor-pointer"
 							href="https://calendar.app.google/YYG1QB72c7TmN9WA9"
-							class="relative flex items-center justify-center flex-shrink-0 w-16 h-16"
 						>
-							<img
-								src="./google_calendar.png"
-								class="object-fit"
-							/>
-						</a>
-						<div class="ml-6">
-							<h3 class="text-lg font-semibold">9 Giugno</h3>
-							<p class="mt-4">Dalle 7:00 alle 23:00</p>
-						</div>
+							<div
+								class="relative flex items-center justify-center flex-shrink-0 w-16 h-16"
+							>
+								<img
+									src="./google_calendar.png"
+									class="object-fit"
+								/>
+							</div>
+							<div class="ml-6">
+								<h3 class="text-lg font-semibold">9 Giugno</h3>
+								<em>Dalle 7:00 alle 23:00</em>
+							</div></a
+						>
 					</li>
 				</ul>
 			</div>
